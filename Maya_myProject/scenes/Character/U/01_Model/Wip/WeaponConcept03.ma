@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
-//Name: WeaponConcept02.ma
-//Last modified: Tue, Apr 10, 2018 12:00:01 PM
+//Name: WeaponConcept03.ma
+//Last modified: Tue, Apr 10, 2018 12:19:14 PM
 //Codeset: 1252
 requires maya "2017ff05";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "37860079-4A72-003C-A201-86BBF53553BE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.11712538623675783 6.3621002635856492 -8.8175786153365099 ;
-	setAttr ".r" -type "double3" -8.7383527278587572 -1981.0000000005532 0 ;
+	setAttr ".t" -type "double3" 13.465088087666707 3.43473028602275 18.758007398571213 ;
+	setAttr ".r" -type "double3" -1.5383527276639433 -2480.5999999994174 1.2862432435376233e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D38D73EC-40A7-44B9-D72B-7CAA9C2DBBC5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 8.8678539400043075;
+	setAttr ".coi" 21.47743860466381;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -8750,7 +8750,6 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
 		 1 1 1 0 0 0 0 0 0 0 0 0
 		 0 0 0 0 ;
-	setAttr ".aoon" yes;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
 	setAttr -s 2 ".st";
@@ -9024,4 +9023,4 @@ connectAttr "pCubeShape6.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape7.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pTorusShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pTorusShape3.iog" ":initialShadingGroup.dsm" -na;
-// End of WeaponConcept02.ma
+// End of WeaponConcept03.ma
