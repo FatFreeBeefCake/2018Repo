@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
-//Name: Turtle_03.ma
-//Last modified: Thu, Apr 12, 2018 10:12:27 AM
+//Name: Turtle_04_Final_Rig.ma
+//Last modified: Thu, Apr 12, 2018 10:14:39 AM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -17,8 +17,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "6599F4CE-42CD-8B3B-9C73-5A9FBD293DC0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 25.217673086619847 -0.79504175793906029 4.8769982964666276 ;
-	setAttr ".r" -type "double3" -0.60000000000008513 -1723.2000000000703 0 ;
+	setAttr ".t" -type "double3" 33.840249964920545 3.5319247123690296 4.6430416740855804 ;
+	setAttr ".r" -type "double3" -10.800000000027937 -1717.2000000000223 -6.344196569024724e-015 ;
 	setAttr ".rp" -type "double3" -1.2212453270876722e-015 4.6629367034256575e-015 0 ;
 	setAttr ".rpt" -type "double3" 8.3242279810815088e-014 -7.6900759732978896e-014 
 		1.1681979574178441e-014 ;
@@ -27,7 +27,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 27.294454023300315;
+	setAttr ".coi" 33.393597984268474;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -46232,4 +46232,4 @@ connectAttr "file15.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file16.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file17.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file18.msg" ":defaultTextureList1.tx" -na;
-// End of Turtle_03.ma
+// End of Turtle_04_Final_Rig.ma
